@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>JavaScript Interactive Playground</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <section class="counter-section">
+    <h2>🎮 Button Counter</h2>
+    <button id="counterBtn">Click Me!</button>
+    <p>You've clicked <span id="clickCount">0</span> times.</p>
+  </section>
+
+  <section class="faq-section">
+    <h2>📚 FAQ</h2>
+    <div class="faq">
+      <button class="faq-toggle">What is JavaScript?</button>
+      <p class="faq-answer hidden">JavaScript is a programming language used to make web pages interactive.</p>
+    </div>
+    <div class="faq">
+      <button class="faq-toggle">Why use event listeners?</button>
+      <p class="faq-answer hidden">They allow your page to respond to user actions like clicks and typing.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>📋 Sign Up Form</h2>
+    <form id="signupForm">
+      <label>Name: <input type="text" id="name" /></label>
+      <label>Email: <input type="text" id="email" /></label>
+      <label>Password: <input type="password" id="password" /></label>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formFeedback"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
